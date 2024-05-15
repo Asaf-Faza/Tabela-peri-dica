@@ -1,0 +1,160 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variável*/
+:root{
+    --color-nao-metais: #4603b1;
+    --color-gases-nobres: #277da1;
+    --color-metais-alcalinos: #E20808;
+    --color-metais-alcalinos-terrosos: #F94141;
+    --color-semimetais: #43aa8b;
+    --color-halogenios: #87b465;
+    --color-outros-metais: #4d908e;
+    --color-metais-transicao: #2a796c;
+    --color-lantanideos: #277da1;
+    --color-actinideos: #79456c;
+    --color-text: #fff;
+}
+
+.elemento{
+    width: 100px;
+    height:100px;
+    margin:5px;
+    color:var(--color-text);
+}
+
+.legendas{
+    color: black;
+    width: 300px;
+    height: 75px;
+}
+
+.estiloLegenda{
+    color: white;
+}
+
+.container{
+    display: flex;
+}
+
+.estilo{
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.right{
+    text-align: end;
+}
+
+.naoMetais{
+    background-color: var(--color-nao-metais);
+}
+
+.gasesNobres{
+    background-color: var(--color-gases-nobres);
+}
+
+.metaisAlcalinos{
+    background-color: var(--color-metais-alcalinos);
+}
+.metaisAlcalinosTerrosos{
+    background-color: var(--color-metais-alcalinos-terrosos);
+}
+
+.semiMetais{
+    background-color: var(--color-semimetais);
+}
+
+.halogenios{
+    background-color: var(--color-halogenios);
+}
+
+.outrosMetais{
+    background-color: var(--color-outros-metais);
+}
+
+.metaisTransicao{
+    background-color: var(--color-metais-transicao);
+}
+
+.lantanideos{
+    background-color: var(--color-lantanideos);
+}
+
+.actnideos{
+    background-color: var(--color-actinideos);
+}
+
+/**desktop**/
+@media screen and (min-width: 600px){
+    .container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabela{
+        width: 1350px;
+        display: flex;
+        flex-direction: column;
+    }
+    .elemento{
+        width: 65px;
+        height: 65px;
+        margin: 5px;
+    }
+    .estilo{
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+    .linha1{
+    display: flex;
+    justify-content: space-between;
+    }
+    .linha2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .linha3{
+        display: flex;
+        justify-content: space-between;
+    }
+    .linha4{
+        display:flex;
+    }
+    .linha5{
+        display: flex;
+    }
+    .linhaLantanideos{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .linhaActinideos{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .linha6{
+        display: flex;
+        justify-content:  space-between;
+    }
+    .linha7{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sublinha2{
+        display: flex;
+    }
+    .sublinha1{
+        display: flex;
+    }
+    .sublinha3{
+        display: flex;
+    }
+    .sublinha4{
+        display: flex;
+    }
+}
